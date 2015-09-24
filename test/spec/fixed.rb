@@ -12,7 +12,7 @@ describe Clock::Fixed do
     let(:iso8601_now) { now.iso8601(3) }
 
     specify "Time represented as a sting" do
-      expect(clock.iso8601).to eq(iso8601_now)
+      expect(clock.iso8601(Time.now)).to eq(iso8601_now)
     end
   end
 

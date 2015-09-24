@@ -14,7 +14,7 @@ module Clock
       fixed_time
     end
 
-    def iso8601(precision = nil)
+    def iso8601(time = nil, precision = nil)
       precision ||= Clock::ISO8601.precision
       fixed_time.iso8601(precision)
     end
